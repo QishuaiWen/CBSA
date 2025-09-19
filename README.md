@@ -2,9 +2,10 @@
 
 <p align="center"> <img src="assets/CBT_arch.png" width="800px"/> <br> <em>Contract-and-Broadcast Transformer (CBT) and Contract-and-Broadcast Self-Attention (CBSA).</em> </p>
 
- More will be released in a few days — stay tuned!
+
 
 ## News
+ More will be released in a few days — stay tuned!
 🎉 Our paper has been accepted to NeurIPS 2025 as a Spotlight!
 
 ## Acknowledgements
