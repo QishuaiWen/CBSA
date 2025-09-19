@@ -1,0 +1,7 @@
+torch==2.0.1
+numpy
+torchvision==0.15.2
+einops
+argparse
+timm
+lion_pytorch
