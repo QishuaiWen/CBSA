@@ -6,6 +6,7 @@
 
 ## News
  More will be released in a few days — stay tuned!
+ 
 🎉 Our paper has been accepted to NeurIPS 2025 as a Spotlight!
 
 ## Acknowledgements
