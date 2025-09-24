@@ -22,9 +22,8 @@ Our CBSA is an inherently interpretable and efficient self-attention mechanism t
 [2025/9/19] Our paper has been accepted to NeurIPS 2025 as a Spotlight🌟!
 
 ## 📊 Model Zoo
-### Image Classification
 
-The CBT (Contract-and-Broadcast Transformer) models for are built upon our CBSA and trained on the ImageNet-1K dataset with naive data augmentation preliminarily.
+The CBT (Contract-and-Broadcast Transformer) models for image classification are built upon our CBSA and trained on the ImageNet-1K dataset with naive data augmentation preliminarily.
 
 | Model      | Top-1 Acc | FLOPs  | #Params | Checkpoint |
 |:------------:|----------------------:|--------:|--------:|:---------:|
@@ -33,7 +32,7 @@ The CBT (Contract-and-Broadcast Transformer) models for are built upon our CBSA 
 | CBT-B     | 73.4%                | 15.1G  | 25.7M   | [link](https://drive.google.com/file/d/1CouOjiy3T9YRhYJFk4gL8PVOgiJ-bFgn/view?usp=sharing) |
 | CBT-L     | 74.4%                | 47.3G  | 83.1M   | [link](https://drive.google.com/file/d/1xdEClU6xb5qSwxvDZROKfLac8mJ7R6vb/view?usp=sharing) |
 
-### Semantic Segmentation 
+The CBT decoders for semantic segmentation are stacked on the top of pretrained ViTs and trained on the ADE20K dataset.
 
 | Model      | mIoU | FLOPs (decoder) | Checkpoint |
 |:------------:|----------------------:|--------:|:---------:|
@@ -41,6 +40,30 @@ The CBT (Contract-and-Broadcast Transformer) models for are built upon our CBSA 
 | CBT-S     | 45.8%                | 2.3G   | [link](https://drive.google.com/drive/folders/1iFB5VugKRxRITexdGIhHzCYsntWOGWZj?usp=sharing) |
 | CBT-B     | 49.3%                | 7.8G  | [link](https://drive.google.com/drive/folders/1pFmCFnSSSVs4J-ozB7YX-ZLlJUKDsdG0?usp=sharing) |
 | CBT-L     | 53.3%                | 22.3G  | [link](https://drive.google.com/drive/folders/1FxrqFdskdclj70I3CNfpMrWxyewuog_I?usp=sharing) |
+
+## 📝 Training and Inference
+
+### Image Classification
+To train a CBT model (e.g., CBT-Small) on ImageNet-1K, run the following command inside the `CBSA_image_classification` directory:
+
+```python
+python main.py
+    --arch Ours_small
+    --batch-size 256
+    --epochs 150
+    --optimizer Lion
+    --lr 2e-4
+    --weight-decay 0.05
+    --print-freq 50
+```
+
+To evaluate a CBT model, run the following command inside the same directory (after downloading the checkpoints from the model zoo and placing them in the correct path):
+```python
+python main.py --arch Ours_small --evaluate --resume CKPT/CBT/cbt_small_best.pth.tar
+```
+
+### Semantic Segmentation
+
 
 ## 🚀 Demos
 
