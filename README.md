@@ -4,20 +4,55 @@ This repository is the official PyTorch implementation the paper:
 + **Towards Interpretable and Efficient Attention: Compressing All by Contracting a Few [NeurIPS 2025 | [arXiv](https://arxiv.org/abs/2509.16875)]**.
 
 This paper extends our previous work that explored inherently interpretable Transformer decoders for semantic segmentation:
-+ **Rethinking Decoders for Transformer-based Semantic Segmentation: A Compression Perspective [NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2411.03033) | [github](https://github.com/QishuaiWen/DEPICT)]**
++ **Rethinking Decoders for Transformer-based Semantic Segmentation: A Compression Perspective [NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2411.03033) | [github](https://github.com/QishuaiWen/DEPICT) ｜ [openreiew](https://openreview.net/forum?id=IHjoPnNZb9)]**
 
 Our CBSA is an inherently interpretable and efficient self-attention mechanism that offers the following advantages:
 + It is well-established on an optimization objective grounded in the principle of compression, where the forward pass of CBSA naturally arises from its optimization procedure.
 + It scales linearly with sequence length when the number of representatives is fixed.
 + It unifies a broad spectrum of attention mechanisms as special cases, reducing their fundamental differences to variations in the number and structure of representatives.
 + It demonstrates performance comparable to, or even surpassing, linear attention while maintaining nearly identical computational cost.
++ It shows emergent segmentation capabilities and robustness to parameter perturbations.
 
 <p align="center">
     <img src="assets/CBT_arch.png" width="600"\>
 </p>
 <p align="center">
 
-
-## News
+## 📣 News 
 [2025/9/19] Our paper has been accepted to NeurIPS 2025 as a Spotlight🌟!
 
+## 📊 Model Zoo
+### Image Classification
+
+The CBT (Contract-and-Broadcast Transformer) models for are built upon our CBSA and trained on the ImageNet-1K dataset with naive data augmentation preliminarily.
+
+| Model      | Top-1 Acc | FLOPs  | #Params | Checkpoint |
+|:------------:|----------------------:|--------:|--------:|:---------:|
+| CBT-T     | 63.2%                | 1.1G   | 1.8M    | [link](https://drive.google.com/file/d/1GovOGBPDkHJDpOYX8KVJJeDrjwQvHfhb/view?usp=sharing) |
+| CBT-S     | 71.4%                | 4.0G   | 6.7M    | [link](https://drive.google.com/file/d/1sKZBbIxvgPJmfO89TKaggKD0EdUJ7jSu/view?usp=sharing) |
+| CBT-B     | 73.4%                | 15.1G  | 25.7M   | [link](https://drive.google.com/file/d/1CouOjiy3T9YRhYJFk4gL8PVOgiJ-bFgn/view?usp=sharing) |
+| CBT-L     | 74.4%                | 47.3G  | 83.1M   | [link](https://drive.google.com/file/d/1xdEClU6xb5qSwxvDZROKfLac8mJ7R6vb/view?usp=sharing) |
+
+### Semantic Segmentation 
+
+| Model      | mIoU | FLOPs (decoder) | Checkpoint |
+|:------------:|----------------------:|--------:|:---------:|
+| CBT-T     | 39.1%                | 1.5G   | [link](https://drive.google.com/drive/folders/1Di7CKRsWA4k_WeNTQeiF6MbsWPCnPa6y?usp=sharing) |
+| CBT-S     | 45.8%                | 2.3G   | [link](https://drive.google.com/drive/folders/1iFB5VugKRxRITexdGIhHzCYsntWOGWZj?usp=sharing) |
+| CBT-B     | 49.3%                | 7.8G  | [link](https://drive.google.com/drive/folders/1pFmCFnSSSVs4J-ozB7YX-ZLlJUKDsdG0?usp=sharing) |
+| CBT-L     | 53.3%                | 22.3G  | [link](https://drive.google.com/drive/folders/1FxrqFdskdclj70I3CNfpMrWxyewuog_I?usp=sharing) |
+
+## 🚀 Demos
+
+Kaggle Notebook: [Visualize the Attention Maps](https://www.kaggle.com/code/lupin11/cbsa-attention-map-visualization)
+
+<p align="center">
+    <img src="assets/attn_maps.png" width="800"\>
+</p>
+<p align="center">
+
+Kaggle Notebook: [Evaluate the Zero-Shot Segmentation Performance](https://www.kaggle.com/code/lupin11/attentionmapsegmentation)
+
+
+## Acknowledgement
+Our code is largely built on [CRATE](https://github.com/Ma-Lab-Berkeley/CRATE) and [Segmenter](https://github.com/rstrudel/segmenter).
