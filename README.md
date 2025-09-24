@@ -1,10 +1,10 @@
 # CBSA (Contract-and-Broadcast Self-Attention) 
 
 This repository is the official PyTorch implementation the paper:
-+ **Towards Interpretable and Efficient Attention: Compressing All by Contracting a Few [NeurIPS 2025 | [arXiv](https://arxiv.org/abs/2509.16875)]**.
++ **Towards Interpretable and Efficient Attention: Compressing All by Contracting a Few [[arXiv](https://arxiv.org/abs/2509.16875)]**.
 
 This paper extends our previous work that explored inherently interpretable Transformer decoders for semantic segmentation:
-+ **Rethinking Decoders for Transformer-based Semantic Segmentation: A Compression Perspective [NeurIPS 2024 | [arXiv](https://arxiv.org/abs/2411.03033) | [github](https://github.com/QishuaiWen/DEPICT) ｜ [openreiew](https://openreview.net/forum?id=IHjoPnNZb9)]**
++ **Rethinking Decoders for Transformer-based Semantic Segmentation: A Compression Perspective [[NeurIPS2024](https://neurips.cc/virtual/2024/poster/95774) | [arXiv](https://arxiv.org/abs/2411.03033) | [github](https://github.com/QishuaiWen/DEPICT)｜[openreiew](https://openreview.net/forum?id=IHjoPnNZb9)]**
 
 Our CBSA is an inherently interpretable and efficient self-attention mechanism that offers the following advantages:
 + It is well-established on an optimization objective grounded in the principle of compression, where the forward pass of CBSA naturally arises from its optimization procedure.
