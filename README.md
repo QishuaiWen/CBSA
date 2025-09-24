@@ -64,6 +64,40 @@ python main.py --arch Ours_small --evaluate --resume CKPT/CBT/cbt_small_best.pth
 
 ### Semantic Segmentation
 
+To train a CBT decoder with a ViT backbone for semantic segmentation, run the following command inside the `CBSA_semantic_segmentation` directory:
+
+```python
+python -m segm.train
+    --log-dir log/CBT-Small
+    --dataset ade20k
+    --backbone vit_small_patch16_384
+    --decoder mask_transformer
+```
+
+To evaluate them, run:
+
+```python
+python -m segm.eval.miou log/DEPICT-SA-Small/checkpoint.pth ade20k --singlescale
+```
+
+We provide a detailed guideline for this part in our previous [repository](https://github.com/QishuaiWen/DEPICT) on semantic segmentation.
+
+### ViT Adaption
+
+To adapt a ViT model pretrained on ImageNet-21K into the CBSA style, run the following command inside the `CBSA_finetune_vit` directory:
+
+```python
+python main.py
+    --arch vit_small_patch16_224
+    --batch-size 512 --epochs 50
+    --optimizer AdamW
+    --lr 5e-5
+    --weight-decay 0.01
+    --print-freq 50
+```
+
+
+
 
 ## 🚀 Demos
 
