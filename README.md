@@ -32,7 +32,8 @@ Our CBSA is an inherently interpretable and efficient self-attention mechanism t
   <em>Performance comparison</em>
 </div>
 
-The CBT (Contract-and-Broadcast Transformer) models for image classification are built upon our CBSA and trained on the ImageNet-1K dataset with naive data augmentation preliminarily.
+While the results above are obtained by finetuning ViTs pretrained on ImageNet-21K,
+the CBT (Contract-and-Broadcast Transformer) models for image classification are built upon our CBSA and trained on the ImageNet-1K dataset with **naive data augmentation** preliminarily.
 
 | Model      | Top-1 Acc | FLOPs  | #Params | Checkpoint |
 |:------------:|----------------------:|--------:|--------:|:---------:|
