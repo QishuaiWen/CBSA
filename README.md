@@ -15,7 +15,7 @@ Our CBSA is an inherently interpretable and efficient self-attention mechanism t
 
 <p align="center">
     <img src="assets/CBT_arch.png" width="600"\>
-</p>
+<br> <em>Contract-and-Broadcast Self-Attention </em>
 <p align="center">
 
 ## 📣 News 
@@ -105,14 +105,14 @@ Kaggle Notebook: [Visualize the Attention Maps](https://www.kaggle.com/code/lupi
 
 <p align="center">
     <img src="assets/attn_maps.png" width="800"\>
-</p>
+<br> <em> Attention map comparison </em>
 <p align="center">
 
 Kaggle Notebook: [Evaluate the Zero-Shot Segmentation Performance](https://www.kaggle.com/code/lupin11/attentionmapsegmentation)
 
 <p align="center">
     <img src="assets/synthetic.png" width="800"\>
-</p>
+<br> <em> Compression of synthetic data </em>
 <p align="center">
 
 Kaggle Notebook: [Experiment on synthetic data](https://www.kaggle.com/code/lupin11/synthetic-experiment)
