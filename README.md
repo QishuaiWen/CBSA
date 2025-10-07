@@ -23,6 +23,15 @@ Our CBSA is an inherently interpretable and efficient self-attention mechanism t
 
 ## 📊 Model Zoo
 
+<div align="center">
+  <img src="assets/vit_adapt_224.png" width="200px"/>
+  <img src="assets/vit_adapt_384.png" width="200px"/>
+  <img src="assets/vit_flops_tiny.png" width="200px"/>
+  <img src="assets/vit_flops_base.png" width="200px"/>
+  <br>
+  <em>Performance comparison</em>
+</div>
+
 The CBT (Contract-and-Broadcast Transformer) models for image classification are built upon our CBSA and trained on the ImageNet-1K dataset with naive data augmentation preliminarily.
 
 | Model      | Top-1 Acc | FLOPs  | #Params | Checkpoint |
@@ -97,25 +106,23 @@ python main.py
 ```
 
 
-
-
 ## 🚀 Demos
 
-Kaggle Notebook: [Visualize the Attention Maps](https://www.kaggle.com/code/lupin11/cbsa-attention-map-visualization)
++ Kaggle Notebook: [Visualize the Attention Maps](https://www.kaggle.com/code/lupin11/cbsa-attention-map-visualization)
 
 <p align="center">
     <img src="assets/attn_maps.png" width="800"\>
 <br> <em> Attention map comparison </em>
 <p align="center">
 
-Kaggle Notebook: [Evaluate the Zero-Shot Segmentation Performance](https://www.kaggle.com/code/lupin11/attentionmapsegmentation)
++ Kaggle Notebook: [Evaluate the Zero-Shot Segmentation Performance](https://www.kaggle.com/code/lupin11/attentionmapsegmentation)
+
++ Kaggle Notebook: [Experiment on synthetic data](https://www.kaggle.com/code/lupin11/synthetic-experiment)
 
 <p align="center">
     <img src="assets/synthetic.png" width="800"\>
 <br> <em> Compression of synthetic data </em>
 <p align="center">
-
-Kaggle Notebook: [Experiment on synthetic data](https://www.kaggle.com/code/lupin11/synthetic-experiment)
 
 ## Acknowledgement
 Our code is largely built on [CRATE](https://github.com/Ma-Lab-Berkeley/CRATE) and [Segmenter](https://github.com/rstrudel/segmenter).
