@@ -110,6 +110,12 @@ Kaggle Notebook: [Visualize the Attention Maps](https://www.kaggle.com/code/lupi
 
 Kaggle Notebook: [Evaluate the Zero-Shot Segmentation Performance](https://www.kaggle.com/code/lupin11/attentionmapsegmentation)
 
+<p align="center">
+    <img src="assets/synthetic.png" width="800"\>
+</p>
+<p align="center">
+
+Kaggle Notebook: [Experiment on synthetic data](https://www.kaggle.com/code/lupin11/synthetic-experiment)
 
 ## Acknowledgement
 Our code is largely built on [CRATE](https://github.com/Ma-Lab-Berkeley/CRATE) and [Segmenter](https://github.com/rstrudel/segmenter).
