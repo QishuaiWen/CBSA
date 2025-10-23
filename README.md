@@ -14,7 +14,7 @@ Our CBSA is an inherently interpretable and efficient self-attention mechanism t
 + It shows emergent segmentation capabilities and robustness to parameter perturbations.
 
 <p align="center">
-    <img src="assets/method.png" width="1000"\>
+    <img src="assets/CBSA.png" width="1000"\>
 <br> <em>Contract-and-Broadcast Self-Attention </em>
 <p align="center">
 
