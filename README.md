@@ -1,7 +1,7 @@
 # CBSA (Contract-and-Broadcast Self-Attention) 
 
 This repository is the official PyTorch implementation the paper:
-+ **Towards Interpretable and Efficient Attention: Compressing All by Contracting a Few [[NeurIPS2025](https://neurips.cc/virtual/2025/poster/119786) | [arXiv](https://arxiv.org/abs/2509.16875)]**.
++ **Towards Interpretable and Efficient Attention: Compressing All by Contracting a Few [[NeurIPS2025](https://neurips.cc/virtual/2025/poster/119786) | [arXiv](https://arxiv.org/abs/2509.16875) | [openreview](https://openreview.net/forum?id=6SI1pvb5xl)]**.
 
 This paper extends our previous work that explored inherently interpretable Transformer decoders for semantic segmentation:
 + **Rethinking Decoders for Transformer-based Semantic Segmentation: A Compression Perspective [[NeurIPS2024](https://neurips.cc/virtual/2024/poster/95774) | [arXiv](https://arxiv.org/abs/2411.03033) | [github](https://github.com/QishuaiWen/DEPICT)｜[openreview](https://openreview.net/forum?id=IHjoPnNZb9)]**
