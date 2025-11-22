@@ -18,6 +18,12 @@ Our CBSA is an inherently interpretable and efficient self-attention mechanism t
 <br> <em>Contract-and-Broadcast Self-Attention </em>
 <p align="center">
 
+
+<p align="center">
+    <img src="assets/mcr2.jpg" width="1000"\>
+<br> <em> Illustration of our main idea. </em>
+<p align="center">
+
 ## 📣 News
 [2025/9/19] Our paper has been accepted to NeurIPS 2025 as a Spotlight🌟!
 
