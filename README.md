@@ -20,7 +20,7 @@ Our CBSA is an inherently interpretable and efficient self-attention mechanism t
 
 
 <p align="center">
-    <img src="assets/mcr2.jpg" width="1000"\>
+    <img src="assets/mcr2.png" width="700"\>
 <br> <em> Illustration of our main idea. </em>
 <p align="center">
 
