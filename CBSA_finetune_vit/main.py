@@ -22,7 +22,7 @@ from vision_transformer import vit_tiny_patch16_224, vit_small_patch16_224, vit_
 from timm.loss.cross_entropy import LabelSmoothingCrossEntropy
 from lion_pytorch import Lion
 
-from datasets import build_transform
+# from datasets import build_transform
 
 model_names = ["vit_tiny_patch16_224",
                "vit_small_patch16_224",
