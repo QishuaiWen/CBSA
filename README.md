@@ -27,6 +27,9 @@ Our CBSA is an inherently interpretable and efficient self-attention mechanism t
 ## 📣 News
 [2025/9/19] Our paper has been accepted to NeurIPS 2025 as a Spotlight🌟!
 
+## 🔄 Updates
+[2025/11/24] Our released [demo](https://www.kaggle.com/code/lupin11/cbsa-attention-map-visualization) for attention map visualization now supports ViTs from timm.
+
 ## 📊 Model Zoo
 
 <div align="center">
