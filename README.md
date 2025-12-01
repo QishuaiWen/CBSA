@@ -25,7 +25,7 @@ Our CBSA is an inherently interpretable and efficient self-attention mechanism t
 <p align="center">
 
 ## 📣 News
-[2025/11/21] We gave a presentation in Chinese at AITIME, and the video is available [here](https://www.bilibili.com/video/BV1x1yuBUESS?spm_id_from=333.788.videopod.sections&vd_source=b6aa3096456de657f1e88841e5183ea9).
+[2025/11/21] We gave a presentation at AITIME, and the video is available [here](https://www.bilibili.com/video/BV1x1yuBUESS?spm_id_from=333.788.videopod.sections&vd_source=b6aa3096456de657f1e88841e5183ea9).
 
 [2025/9/19] Our paper has been accepted to NeurIPS 2025 as a Spotlight🌟!
 
