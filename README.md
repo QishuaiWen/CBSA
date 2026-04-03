@@ -1,4 +1,6 @@
-# CBSA (Contract-and-Broadcast Self-Attention) 
+<div align="center">
+<h1>CBSA (Contract-and-Broadcast Self-Attention)</h1>
+</div>
 
 This repository is the official PyTorch implementation of the paper:
 + **Towards Interpretable and Efficient Attention: Compressing All by Contracting a Few [[NeurIPS2025](https://neurips.cc/virtual/2025/poster/119786) | [arXiv](https://arxiv.org/abs/2509.16875) | [openreview](https://openreview.net/forum?id=6SI1pvb5xl)]**.
